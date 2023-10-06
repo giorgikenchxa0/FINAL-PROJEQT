@@ -1,5 +1,5 @@
 body{
-    background-image: url( https://img1.cgtrader.com/items/2507118/f41c9ec05e/most-popular-luxury-brand-logos-3d-model-max-obj-3ds-fbx-stl-dwg.jpg   )
+    background-image: url( https://images5.alphacoders.com/372/thumb-1920-372183.jpg  )
 }
 
 
@@ -78,11 +78,11 @@ h1{
 }
 
 #page{
-    position: relative;
-    left: 300px;
+    position: absolute;
+    left: 650px;
     top: 200px;
     display: inline-block;
-    border: 5px solid rgba(228, 235, 236, 0.5);
+    border: 5px solid goldenrod;
     margin: 0 auto;
     background-color: #333333ad;
     text-align: center;
@@ -147,4 +147,53 @@ h1{
   .active {
     background-color: #333;
     color: rgb(212, 208, 208);
+  }
+
+
+  
+
+  .slider {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .arrow {
+    background: rgba(0, 0, 0, 0.5); 
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem 1rem; 
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .slide.active {
+    opacity: 1;
+  }
+
+  .iframe{
+    position: cover;
   }

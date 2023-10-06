@@ -26,38 +26,110 @@
         <ul class="flex"> 
             <li> <a href="index.html">Home</a></li>
             <li> <a href="about.html">about us</a></li>
-             <li> <a href="contact.html">contact us</a></li>
+             
             <li> <a href="search.html">search</a></li>
         </ul>
       </nav>
      </div> 
      
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 
-<!-- Top Navigation Menu -->
 <div class="topnav">
   <a href="#home" class="active">Logo</a>
   
-  <!-- Navigation links (hidden by default) -->
+  
   <div id="myLinks">
-    <a href="#news">News</a>
+    <a href="search.html">News</a>
     <a href="contact.html">Contact</a>
     <a href="about.html">About</a>
   </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>  
 
 
-    </header>
+   </header>
     <section id="flex">
         <h2> welcome</h2>
-         <p>wish you luck</p>
+         
      </section>
 
+<style>
+  #flex h2{
+    color: goldenrod;
+
+  }
+</style>
+
+<form id="userform">
+   <h1>Registration</h1>
+  <br> 
+  <label for="Email">Email</label>
+  <input type="text"  id="Email" name="Email">
+</br>
+<label for="number">number</label>
+<input type="text" id="number" name="number">
+<br>
+<label for="password">password</label>
+<input type="text"  id="password" name="password">
+</br>
+<input type="submit"  value="submit">
+
+</form>
+
+<style>
+  #userform label{
+     color: goldenrod;
+
+  }
+  #userform {
+    position: absolute;
+    left: px;
+    top: px;
+    display: inline-block;
+    border: 2px solid goldenrod;
+    margin: 0 auto;
+    background-color: rgba(15, 14, 11, 0.596);
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+  }
+
+
+</style>
+
+
+
+
+
+
+     <div class="slider">
+
+      <div class="buttons">
+        <button id="prev" class="arrow arrow-left"></button>
+        <button id="next" class="arrow arrow-right"></button>
+      </div>
+    
+
+      <div class="slides">
+        <div class="slide active" id="slide1">
+            <img src=" https://logodix.com/logo/31359.jpg"  alt="" />
+        </div>
+        <div class="slide" id="slide2">
+            <img src="https://logodix.com/logo/1113505.jpg" alt="" />
+        </div>
+        <div class="slide" id="slide3">
+            <img src=" https://cdn.wallpapersafari.com/45/77/4d6cgF.jpg " alt="" />
+            
+        </div>
+        
+     </div>
+    
+
+    
+  
     
 
 </body>
