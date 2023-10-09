@@ -17,6 +17,34 @@ slider = document.querySelector(".slider");
     let slides = document.querySelectorAll(".slide");
     let index = 0;
 
+    function GetProducts(callback) {
+      fetch("https://jsonlint.com/?url=https://jsonlint.com/datasets/programming-languages.json")
+        .then((response) => response.json())
+        .then((data) => callback(data));
+    }
+    
+    function drawProducts(products) {
+      slides.forEach((slide, slideindex) => {
+        if (products[slideindex] && products[slideindex].image) {
+          let img = document.createElement("img");
+          img.src = products[slideindex].image;
+          slide.appendChild(img);
+        }
+      });
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     next.addEventListener("click", function () {
@@ -138,9 +166,9 @@ TopupBalanse(){
 };
 
 const giorgiAccount = new Account(1000);
-giorgiAccount.deposit (400);
-giorgiAccount.takeout (490);
-giorgiAccount.TopupBalanse(10);
+giorgiAccount.deposit (1000);
+giorgiAccount.takeout (0.00);
+giorgiAccount.TopupBalanse(1000);
 console.log(giorgiAccount.Account) 
 
 
@@ -292,8 +320,8 @@ console.log(fruits.set("oranges", 200));
 async function getusers(){
   let users = fetch("https://jsonlint.com/?url=https://jsonlint.com/datasets/programming-languages.json")
   let result = await users;
-  let data = await result.json();
-  console.log(data);
+ let data = await result.json();
+ console.log(data);
 };
 
 
