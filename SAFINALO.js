@@ -271,9 +271,13 @@ console.log(document.cookie.split(' ; '));
 
 
 
+// map.
+let fruits = new Map();
 
-
-
+  
+console.log(fruits.set("apples", 400));
+console.log(fruits.set("bananas", 300));
+console.log(fruits.set("oranges", 200));
 
 
 
