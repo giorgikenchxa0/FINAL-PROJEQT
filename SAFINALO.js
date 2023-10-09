@@ -10,6 +10,7 @@ function myFunction() {
 
 
 
+
  // slide and function.
 slider = document.querySelector(".slider");
     let next = document.querySelector("#next");
